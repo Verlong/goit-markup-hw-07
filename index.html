@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Studio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,8 +32,7 @@
       <!-- ===============================NAVIGATION=========================================== -->
       <nav class="site-nav">
         <a class="link logo-top" href="./index.html">
-          <span style="color: #4d5ae5;">Web</span>
-          studio
+          <span style="color: #4d5ae5;">Web</span>studio
         </a>
         <ul class="list menu">
           <li class="menu-item">
@@ -62,22 +62,77 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-open_icon" width="32" height="22">
+          <use href="./images/icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
       <!-- ===============================/CONTACTS=========================================== -->
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+          <svg width="8" height="8" class="mobile-menu-close-icon">
+            <use href="./images/icons/sprite.svg#icon-x-close-black"></use>
+          </svg></button>
+        <ul class="list mobile-menu-list">
+          <li class="menu-item">
+            <a class="link mobile-menu-link current" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="link mobile-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list mobile-contact-list">
+          <li class="mobile-contact-item">
+            <a class="link contact mailto" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mobile-contact-item">
+            <a class="link contact telephone" href="tel:+110001111111">
+              +11 (000) 111-11-11
+            </a>
+          </li>
+        </ul>
+        <ul class="social-list list">
+          <li class="social-item"><a href="#" class="social-list-link">
+              <svg width="16" height="16">
+                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+              </svg> </a> </li>
+          <li class="social-item"><a href="#" class="social-list-link">
+              <svg width="16" height="16">
+                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+              </svg> </a> </li>
+          <li class="social-item"><a href="#" class="social-list-link">
+              <svg width="16" height="16">
+                <use href="./images/icons/sprite.svg#icon-facebook"></use>
+              </svg> </a> </li>
+          <li class="social-item"><a href="#" class="social-list-link">
+              <svg width="16" height="16">
+                <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+              </svg> </a> </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
     <!-- ===============================HERO=========================================== -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero-title">
           Effective Solutions for Your Business
         </h1>
         <button class="order-btn modal-btn" type="button" data-modal-open>Order Service</button>
       </div>
-    </section>
+    </section> -->
     <!-- ===============================/HERO=========================================== -->
     <!-- ===============================ABOUT=========================================== -->
-    <section class="about section">
+    <!-- <section class="about section">
       <div class="container">
         <h2 class="visyaly-hidden">Hidden header</h2>
         <ul class="list about-list list-display">
@@ -131,10 +186,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- ===============================/ABOUT=========================================== -->
     <!-- ===============================OUR WORK=========================================== -->
-    <section class="our-work section">
+    <!-- <section class="our-work section">
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
         <ul class="list list-display">
@@ -149,10 +204,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- ===============================/OUR WORK=========================================== -->
     <!-- ===============================TEAM=========================================== -->
-    <section class="team-sec section">
+    <!-- <section class="team-sec section">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
         <ul class="list list-display">
@@ -258,10 +313,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- ===============================/TEAM=========================================== -->
     <!-- ===============================CUSTOMERS=========================================== -->
-    <section class=" section customers-sec">
+    <!-- <section class=" section customers-sec">
       <div class="container">
         <h2 class="section-title">Customers</h2>
         <ul class="customers-list list">
@@ -309,11 +364,11 @@
             </a></li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- ===============================/CUSTOMERS=========================================== -->
   </main>
   <!-- ==========================FOOTER=========================================== -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer-container">
         <a class="link logo-bottom" href="./index.html">
@@ -361,10 +416,10 @@
       </div>
 
     </div>
-  </footer>
+  </footer> -->
   <!-- ==========================/FOOTER=========================================== -->
   <!-- ===============================MODAL WINDOW========================= -->
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg width="8" height="8" class="modal-close-btn-icon">
@@ -425,11 +480,12 @@
         <button type="submit" class="modal-form-button">Send</button>
       </form>
     </div>
-  </div>
+  </div> -->
   <!-- ===============================/MODAL WINDOW========================= -->
 
   <!-- ---script--- -->
-  <script src="./js/modal.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
