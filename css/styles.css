@@ -486,6 +486,7 @@ button {
   }
 
   .section-text {
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
@@ -625,6 +626,7 @@ button {
 }
 .our-work {
   padding-top: 0;
+  padding-bottom: 120px;
 }
 
 .our-work-item {
@@ -633,11 +635,39 @@ button {
 /* =================/ABOUT================ */
 
 /* =================TEAM================ */
-/* .team-sec {
+@media screen and (max-width: 768px) {
+  .team-sec {
+    padding-top: 96px;
+  }
+
+  .team-card {
+    margin: 0 auto;
+  }
+
+  .team-sec > .container > .section-title {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-sec {
+    padding-top: 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-sec {
+    padding-top: 120px;
+  }
+}
+
+.team-sec {
   background-color: var(--cloud-color);
 }
 
 .team-card {
+  max-width: 264px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -685,9 +715,35 @@ button {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--ocean-color);
-} */
+}
 
 /* =================/TEAM================ */
+
+/* ==========================Customers======================= */
+/* .customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-link {
+  fill: var(--light-slate-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+  outline: transparent;
+  transition: fill var(--transition-dur-end-func);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--ocean-color);
+  border: 1px solid var(--ocean-color);
+} */
+/* ==========================/Customers======================= */
 
 /* =================FILTER================ */
 /* .filter {
@@ -794,31 +850,6 @@ button {
 } */
 /* ========== /OVERLAY================== */
 /* =================/FILTER================ */
-/* ==========================Customers======================= */
-/* .customers-list {
-  display: flex;
-  gap: 24px;
-}
-
-.customers-link {
-  fill: var(--light-slate-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--light-slate-color);
-  border-radius: 4px;
-  outline: transparent;
-  transition: fill var(--transition-dur-end-func);
-}
-
-.customers-link:hover,
-.customers-link:focus {
-  fill: var(--ocean-color);
-  border: 1px solid var(--ocean-color);
-} */
-/* ==========================/Customers======================= */
 
 /* =================FOOTER================ */
 /* .footer {
