@@ -638,6 +638,7 @@ button {
 @media screen and (max-width: 768px) {
   .team-sec {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .team-card {
@@ -653,12 +654,14 @@ button {
 @media screen and (min-width: 768px) {
   .team-sec {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-sec {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -720,29 +723,92 @@ button {
 /* =================/TEAM================ */
 
 /* ==========================Customers======================= */
-/* .customers-list {
-  display: flex;
-  gap: 24px;
+@media screen and (max-width: 768px) {
+  .customers-sec {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .customers-list {
+    display: flex;
+    width: 396px;
+
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+  }
+
+  .customers-sec > .container > .section-title {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .customers-link {
+    fill: var(--light-slate-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 88px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+    outline: transparent;
+    transition: fill var(--transition-dur-end-func);
+  }
 }
 
-.customers-link {
-  fill: var(--light-slate-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--light-slate-color);
-  border-radius: 4px;
-  outline: transparent;
-  transition: fill var(--transition-dur-end-func);
+@media screen and (min-width: 768px) {
+  .customers-sec {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .customers-list {
+    display: flex;
+    margin-left: 108px;
+    margin-right: 108px;
+    width: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+  }
+
+  .customers-link {
+    fill: var(--light-slate-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+    outline: transparent;
+    transition: fill var(--transition-dur-end-func);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-sec {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1128px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
 }
 
 .customers-link:hover,
 .customers-link:focus {
   fill: var(--ocean-color);
   border: 1px solid var(--ocean-color);
-} */
+}
 /* ==========================/Customers======================= */
 
 /* =================FILTER================ */
