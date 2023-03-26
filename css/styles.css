@@ -83,10 +83,6 @@ button {
   }
 }
 
-/* .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
 /* ==================HEADER================= */
 @media screen and (max-width: 767px) {
   .menu {
@@ -138,7 +134,7 @@ button {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
-
+  /* =========================MOBILE MENU MODAL===================================== */
   .mobile-menu-open {
     background-color: transparent;
     line-height: 0;
@@ -160,6 +156,32 @@ button {
       visibility var(--transition-dur-end-func);
   }
 
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    margin-bottom: 284px;
+    gap: 40px;
+  }
+
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--ocean-color);
+  }
+
+  .mobile-menu-link.current {
+    color: var(--ocean-color);
+  }
+
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
@@ -178,8 +200,95 @@ button {
     fill: var(--navy-blue-color);
     stroke: var(--navy-blue-modal-color);
   }
-}
 
+  .mobile-menu-close-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 24px;
+    right: 24px;
+
+    background-color: var(--cornflower-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: background-color var(--transition-dur-end-func);
+  }
+  .mobile-menu-close-icon {
+    fill: var(--navy-blue-color);
+    transition: fill var(--transition-dur-end-func);
+  }
+
+  .mobile-menu-close-btn:hover,
+  .mobile-menu-close-btn:focus {
+    background-color: var(--ocean-color);
+  }
+
+  .mobile-menu-close-btn:hover .mobile-menu-close-btn-icon,
+  .mobile-menu-close-btn:focus .mobile-menu-close-btn-icon {
+    fill: var(--white-color);
+  }
+
+  .mobile-contact-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 48px;
+  }
+
+  .modal-telephone {
+    display: block;
+    margin-bottom: 40px;
+
+    width: 353px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--iris-color);
+  }
+
+  .modal-mailto {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--slate-color);
+  }
+
+  .modal-social-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 56px;
+  }
+
+  .modal-social-item {
+    flex-grow: 1;
+  }
+
+  .modal-social-list-link {
+    fill: var(--cloud-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris-color);
+    transition: background-color var(--transition-dur-end-func);
+  }
+
+  .modal-social-list-link:hover,
+  .modal-social-list-link:focus {
+    background-color: var(--ocean-color);
+  }
+}
+/* =========================/MOBILE MENU MODAL===================================== */
 /* ==========================================HEADER TABLET=============================== */
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -1128,7 +1237,7 @@ button {
   }
 }
 
- =================/FOOTER================ */
+/* =================/FOOTER================  */
 /* <!-- =====================MODAL WINDOW========================= --> */
 
 /* .backdrop {
