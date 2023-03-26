@@ -992,7 +992,7 @@ button {
 
 /* ==========OVERLAY================== */
 
-/* .filtered-apps-wraper {
+.filtered-apps-wraper {
   position: relative;
   overflow: hidden;
 }
@@ -1022,7 +1022,7 @@ button {
 .app-hover:hover .overlay,
 .app-hover:focus .overlay {
   transform: translate(0, 0);
-} */
+}
 /* ========== /OVERLAY================== */
 /* =================/FILTER================ */
 
@@ -1240,7 +1240,7 @@ button {
 /* =================/FOOTER================  */
 /* <!-- =====================MODAL WINDOW========================= --> */
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -1261,7 +1261,7 @@ button {
 .modal {
   position: absolute;
   width: 408px;
-   
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1300,11 +1300,11 @@ button {
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--white-color);
-} */
+}
 
 /* ========================MODAL FORM================ */
 
-/* .modal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -1392,10 +1392,10 @@ button {
 .modal-textarea:focus {
   outline: none;
   border-color: var(--iris-color);
-} */
+}
 
 /* ===================CHECKBOX================ */
-/* .modal-checkbox {
+.modal-checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
@@ -1465,4 +1465,4 @@ button {
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-} */
+}
