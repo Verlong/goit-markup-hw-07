@@ -217,11 +217,6 @@ button {
     transition: background-color var(--transition-dur-end-func);
   }
 
-  /* .mobile-menu-wraper {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  } */
   .mobile-menu-close-icon {
     fill: var(--navy-blue-color);
     transition: fill var(--transition-dur-end-func);
